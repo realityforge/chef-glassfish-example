@@ -2,8 +2,8 @@ Vagrant.configure('2') do |config|
 
   config.vm.box = 'hashicorp/precise32'
 
-  config.vm.define 'client' do |client|
-    client.vm.hostname = 'client'
+  config.vm.define 'glassfish-example' do |client|
+    client.vm.hostname = 'glassfish-example'
 
     client.ssh.forward_agent = true
     client.ssh.forward_x11 = true
