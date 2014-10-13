@@ -1,4 +1,11 @@
 {
+  "cookbooks/authbind": {
+    "url": "https://github.com/realityforge/chef-authbind.git",
+    "remote": "master/braid/cookbooks/authbind",
+    "branch": "master",
+    "squashed": true,
+    "revision": "a6fba46f1eaae2de2148d6f8b26a7e83971d0d16"
+  },
   "cookbooks/glassfish": {
     "url": "https://github.com/realityforge/chef-glassfish.git",
     "remote": "master/braid/cookbooks/glassfish",
