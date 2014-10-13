@@ -6,6 +6,13 @@
     "squashed": true,
     "revision": "b40c122e82edbc998f95a2fefd88c619af441b86"
   },
+  "cookbooks/archive": {
+    "url": "https://github.com/realityforge/chef-archive.git",
+    "remote": "master/braid/cookbooks/archive",
+    "branch": "master",
+    "squashed": true,
+    "revision": "d922698832cef53ad326851572aacce7d852dd85"
+  },
   "cookbooks/authbind": {
     "url": "https://github.com/realityforge/chef-authbind.git",
     "remote": "master/braid/cookbooks/authbind",
