@@ -40,5 +40,12 @@
     "branch": "master",
     "squashed": true,
     "revision": "ea5f6322125cdc80ad788d310901f984de1af802"
+  },
+  "cookbooks/partial_search": {
+    "url": "https://github.com/opscode-cookbooks/partial_search.git",
+    "remote": "master/braid/cookbooks/partial_search",
+    "branch": "master",
+    "squashed": true,
+    "revision": "3f4e8673f21057344c5840e0f3ca6ff0a3ce4dd0"
   }
 }
