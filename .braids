@@ -20,6 +20,13 @@
     "squashed": true,
     "revision": "a6fba46f1eaae2de2148d6f8b26a7e83971d0d16"
   },
+  "cookbooks/cutlery": {
+    "url": "https://github.com/realityforge/chef-cutlery.git",
+    "remote": "master/braid/cookbooks/cutlery",
+    "branch": "master",
+    "squashed": true,
+    "revision": "24e20f05ffdfb88d12df2c91b95d20789c2727dd"
+  },
   "cookbooks/glassfish": {
     "url": "https://github.com/realityforge/chef-glassfish.git",
     "remote": "master/braid/cookbooks/glassfish",
