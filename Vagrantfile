@@ -26,8 +26,8 @@ Vagrant.configure('2') do |config|
           }
         },
         'glassfish' => {
-          'version' => '4.0.1',
-          'package_url' => 'http://dlc.sun.com.edgesuite.net/glassfish/4.0.1/promoted/glassfish-4.0.1-b01.zip',
+          'version' => '4.1',
+          'package_url' => 'http://dlc.sun.com.edgesuite.net/glassfish/4.1/release/glassfish-4.1.zip',
           'domains' => {
             'mydomain' => {
               'config' => {
