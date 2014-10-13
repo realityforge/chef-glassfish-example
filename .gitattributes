@@ -1,0 +1,3 @@
+* -text
+Vagrantfile text -crlf -binary
+*.md text -crlf -binary
