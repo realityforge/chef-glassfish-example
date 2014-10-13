@@ -1,4 +1,11 @@
 {
+  "cookbooks/apt": {
+    "url": "https://github.com/opscode-cookbooks/apt.git",
+    "remote": "master/braid/cookbooks/apt",
+    "branch": "master",
+    "squashed": true,
+    "revision": "b40c122e82edbc998f95a2fefd88c619af441b86"
+  },
   "cookbooks/authbind": {
     "url": "https://github.com/realityforge/chef-authbind.git",
     "remote": "master/braid/cookbooks/authbind",
