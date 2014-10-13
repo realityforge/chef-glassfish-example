@@ -5,3 +5,6 @@
 
 # Ignore temporary directory
 /tmp
+
+# Ignore the vagrant runtime config file
+/.vagrant
