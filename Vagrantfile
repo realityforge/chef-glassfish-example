@@ -35,6 +35,7 @@ Vagrant.configure('2') do |config|
                 'admin_port' => 4848,
                 'username' => 'admin',
                 'password' => 'admin',
+                'master_password' => 'mykeystorepassword',
                 'remote_access' => true
               }
             }
