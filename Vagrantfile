@@ -12,6 +12,43 @@ Vagrant.configure('2') do |config|
   config.ssh.forward_agent = true
   config.ssh.forward_x11 = true
 
+  config.vm.define 'glassfish-secure-example' do |client|
+    client.vm.hostname = 'glassfish-secure-example-vm'
+
+    client.vm.provision :chef_solo do |chef|
+      chef.add_recipe 'apt'
+      chef.add_recipe 'java::default'
+      chef.add_recipe 'glassfish::attribute_driven_domain'
+
+      chef.json = {
+        'java' => {
+          'install_flavor' => 'oracle',
+          'jdk_version' => 7,
+          'oracle' => {
+            'accept_oracle_download_terms' => true
+          }
+        },
+        'glassfish' => {
+          'version' => '4.1',
+          'package_url' => 'http://dlc.sun.com.edgesuite.net/glassfish/4.1/release/glassfish-4.1.zip',
+          'domains' => {
+            'mydomain' => {
+              'config' => {
+                'port' => 7070,
+                'admin_port' => 4848,
+                'username' => 'admin',
+                'password' => 'admin',
+                'master_password' => 'mykeystorepassword',
+                'remote_access' => true,
+                'secure' => true
+              }
+            }
+          }
+        }
+      }
+    end
+  end
+
   config.vm.define 'glassfish-example' do |client|
     client.vm.hostname = 'glassfish-example-vm'
 
