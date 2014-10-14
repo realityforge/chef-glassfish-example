@@ -13,7 +13,7 @@ Vagrant.configure('2') do |config|
   config.ssh.forward_x11 = true
 
   config.vm.define 'glassfish-example' do |client|
-    client.vm.hostname = 'glassfish-example'
+    client.vm.hostname = 'glassfish-example-vm'
 
     client.vm.provision :chef_solo do |chef|
       chef.add_recipe 'apt'
