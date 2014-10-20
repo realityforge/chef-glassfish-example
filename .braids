@@ -32,7 +32,7 @@
     "remote": "master/braid/cookbooks/glassfish",
     "branch": "master",
     "squashed": true,
-    "revision": "94d5473ac7320965b8db1e9c98f816f91287f848"
+    "revision": "c361bce9e310d45b74239a91496f8c1051bbe7f5"
   },
   "cookbooks/java": {
     "url": "https://github.com/agileorbit-cookbooks/java.git",
