@@ -11,3 +11,7 @@ The following virtual machines are defined:
   that uses local SSL connections to communicate with the domain controller.
 * `glassfish-example`: An example that supports remote administration of the
   glassfish domain controller.
+* `glassfish-example-with-library`: An example where a library is added to
+  the domain and forces the domain to restart after the library is added.
+  This is typically required when the library is a database driver required
+  when defining jdbc resources.
