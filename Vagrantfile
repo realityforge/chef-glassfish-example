@@ -92,4 +92,28 @@ Vagrant.configure('2') do |config|
                   }
                 }
               })
+
+  define_node(config,
+              'glassfish-example-with-common-library',
+              'version' => '4.1',
+              'package_url' => 'http://dlc.sun.com.edgesuite.net/glassfish/4.1/release/glassfish-4.1.zip',
+              'domains' => {
+                'mydomain' => {
+                  'config' => {
+                    'port' => 7070,
+                    'admin_port' => 4848,
+                    'username' => 'admin',
+                    'password' => 'admin',
+                    'master_password' => 'mykeystorepassword',
+                    'remote_access' => true
+                  },
+                  'extra_libraries' => {
+                    'jtds' => {
+                      'type' => 'common',
+                      'url' => 'http://central.maven.org/maven2/net/sourceforge/jtds/jtds/1.2.7/jtds-1.2.7.jar',
+                      'requires_restart' => true
+                    }
+                  }
+                }
+              })
 end

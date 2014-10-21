@@ -15,3 +15,6 @@ The following virtual machines are defined:
   the domain and forces the domain to restart after the library is added.
   This is typically required when the library is a database driver required
   when defining jdbc resources.
+* `glassfish-example-with-common-library`: An example similar to
+  `glassfish-example-with-library` except that the library is placed in the
+  "common" classloader.
