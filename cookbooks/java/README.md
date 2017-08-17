@@ -102,11 +102,11 @@ the .tar.gz.
 * `node['java']['ibm']['accept_ibm_download_terms']` - Indicates that
   you accept IBM's EULA (for `java::ibm`)
 * `node['java']['oracle_rpm']['type']` - Type of java RPM (`jre` or `jdk`), default `jdk`
-* `node['java']['oracle_rpm']['package_version']` - optional, can be set 
+* `node['java']['oracle_rpm']['package_version']` - optional, can be set
   to pin a version different from the up-to-date one available in the YUM repo,
-  it might be needed to also override the node['java']['java_home'] attribute 
+  it might be needed to also override the node['java']['java_home'] attribute
   to a value consistent with the defined version
-* `node['java']['oracle_rpm']['package_name']` - optional, can be set 
+* `node['java']['oracle_rpm']['package_name']` - optional, can be set
   to define a package name different from the RPM published by Oracle.
 * `node['java']['accept_license_agreement']` - Indicates that you accept
   the EULA for openjdk package installation.

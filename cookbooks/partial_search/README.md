@@ -1,7 +1,7 @@
 Partial Search Cookbook
 =======================
 [Partial Search](http://docs.opscode.com/essentials_search.html#partial-search)
-is a search API available on Chef Server. (see Notes below for version compatibility)  
+is a search API available on Chef Server. (see Notes below for version compatibility)
 It can be used to reduce the network bandwidth and the memory used by
 chef-client to process search results.
 

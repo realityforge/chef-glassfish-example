@@ -55,4 +55,3 @@ suites:
       apt:
         unattended_upgrades:
           enabled: true
-

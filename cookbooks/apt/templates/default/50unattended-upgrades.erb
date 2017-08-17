@@ -18,7 +18,7 @@ Unattended-Upgrade::Package-Blacklist {
 };
 
 // This option allows you to control if on a unclean dpkg exit
-// unattended-upgrades will automatically run 
+// unattended-upgrades will automatically run
 //   dpkg --force-confold --configure -a
 // The default is true, to ensure updates keep getting installed
 Unattended-Upgrade::AutoFixInterruptedDpkg "<%= node['apt']['unattended_upgrades']['auto_fix_interrupted_dpkg'] ? 'true' : 'false' %>";
@@ -50,8 +50,8 @@ Unattended-Upgrade::MailOnlyOnError "<%= node['apt']['unattended_upgrades']['mai
 // (equivalent to apt-get autoremove)
 Unattended-Upgrade::Remove-Unused-Dependencies "<%= node['apt']['unattended_upgrades']['remove_unused_dependencies'] ? 'true' : 'false' %>";
 
-// Automatically reboot *WITHOUT CONFIRMATION* if a 
-// the file /var/run/reboot-required is found after the upgrade 
+// Automatically reboot *WITHOUT CONFIRMATION* if a
+// the file /var/run/reboot-required is found after the upgrade
 Unattended-Upgrade::Automatic-Reboot "<%= node['apt']['unattended_upgrades']['automatic_reboot'] ? 'true' : 'false' %>";
 
 
